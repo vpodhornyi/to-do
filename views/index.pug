@@ -1,0 +1,40 @@
+include header
+
+div(class='container col-12 col-lg-7')
+    div(class='btn-block')
+        a(class=('btn btn-warning link-create link-create_notes') href='/notes')= 'Create Notes'
+        a(class=('btn btn-success link-create link-create_lists') href='/lists')= 'Create Lists'
+
+    div(class='notes-list')
+        if(notesArr)
+            each item in foo= notesArr
+                a(
+                class='notes-list__item'
+                href=`/notes/${item._id}`
+                style=`background-color: ${item.color}`
+                )
+                    h3= item.title
+                    if(item.description)
+                        each field, i in foo= item.description
+                            if(i < 4)
+                                p= field
+                            if(i === 5)
+                                p= '...'
+                                break
+    div(class='todo-list')
+        each item in foo= listsArr
+            a(
+            class='todo-list__item'
+            href=`/lists/${item._id}`
+            style=`background-color: ${item.color}`
+            )
+                h3= item.title
+                each field, i in foo= item.description
+                    if(i < 4)
+                        div(class='custom-control custom-checkbox todo-list__field')
+                            input(type="checkbox" onclick="return false" class="custom-control-input" id=`"defaultUnchecked${recordId}"` checked=field.isDone)
+                            label(class="custom-control-label label" for=`"defaultUnchecked${recordId++}"`)
+                            span(class="lists__checkbox-text")= field.name
+                    if(i === 5)
+                        p= '...'
+                        break

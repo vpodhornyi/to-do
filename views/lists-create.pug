@@ -1,0 +1,29 @@
+include header
+
+div(class='container container_create-lists')
+    div(class='lists color-white')
+        div(class='lists__title')
+            span(class='lists__title-label')= 'Title:'
+            span(class='contenteditable lists__title-content' contenteditable="true")
+        div(class='contenteditable lists__content')
+            input(type="text" class="form-control add-todo" placeholder="Add item")
+
+        div(class='contenteditable lists__content-done')
+
+        div(class='btn-block')
+            a(class='btn btn-warning' href='/')= 'Back'
+            button(type='button' class='btn  btn-success btn_save')= 'Save'
+                span(class="spinner-border spinner-border-sm")
+            div(class='dropup')
+                button(type='button' class='btn btn btn-light dropdown-toggle' data-toggle="dropdown")= 'Color'
+                div(class='dropdown-menu')
+                    p(class=' choose-color color-reef')
+                    p(class=' choose-color color-mauve')
+                    p(class=' choose-color color-yellow')
+                    p(class=' choose-color color-cinnabar')
+                    p(class=' choose-color color-white')
+
+
+include popup
+include list-scripts
+

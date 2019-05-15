@@ -1,0 +1,35 @@
+.container_create-notes {
+  /*height: 100vh;*/
+  display: flex;
+  align-items: flex-start;
+}
+
+.notes {
+  flex-basis: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  /*background-color: #fff475;*/
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.notes__title {
+  padding: 20px;
+}
+
+.notes__title-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.notes__title-content {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.notes__field {
+  height: 25px;
+  border-bottom: 1px solid lightgrey;
+  padding: 0 5px;
+}

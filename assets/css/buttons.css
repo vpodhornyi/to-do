@@ -1,0 +1,33 @@
+.btn-block {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.link-create {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  /*color: #fff;*/
+}
+
+.link-create_notes {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.link-create_lists {
+  color: #000;
+  margin-left: 10px;
+}
+.spinner-border {
+  margin-left: 5px;
+  display: none;
+}
+.close {
+  box-shadow: none;
+}

@@ -1,0 +1,37 @@
+.container_create-lists {
+  display: flex;
+  align-items: flex-start;
+}
+
+.lists {
+  flex-basis: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.lists__title {
+  padding: 20px;
+}
+
+.lists__title-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.lists__title-content {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.lists__field {
+  min-height: 30px;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 5px;
+}
+.lists__checkbox-text {
+  padding-left: 5px;
+  outline: none;
+  cursor: text;
+}

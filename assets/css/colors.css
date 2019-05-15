@@ -1,0 +1,35 @@
+.color-reef {
+  background-color: #ccff90;
+}
+
+.color-mauve {
+  background-color: #d7aefb;
+}
+
+.color-yellow {
+  background-color: #fff475;
+}
+
+.color-cinnabar {
+  background-color: #f28b82;
+}
+
+.color-white {
+  background-color: #f8f8ff;
+}
+
+.choose-color {
+  height: 20px;
+  width: 78px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  min-width: 78px;
+  padding: 0;
+}
+
+.dropdown-menu_edit {
+  display: none !important;
+}
+

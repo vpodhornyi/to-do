@@ -1,0 +1,25 @@
+include header
+div(class='container container_create-notes')
+    div(class='notes color-white')
+        div(class='notes__title')
+            span(class='notes__title-label')= 'Title:'
+            span(class='contenteditable notes__title-content' contenteditable="true")
+        div(class='contenteditable notes__content' contenteditable="true" aria-multiline="true")
+             div(class='notes__field')
+        div(class='btn-block')
+            a(class='btn btn-warning' href='/')= 'Back'
+            button(type='button' class='btn  btn-success btn_save')= 'Save'
+                span(class="spinner-border spinner-border-sm")
+            div(class='dropup')
+                button(type='button' class='btn btn btn-light dropdown-toggle' data-toggle="dropdown")= 'Color'
+                div(class='dropdown-menu')
+                    p(class=' choose-color color-reef')
+                    p(class=' choose-color color-mauve')
+                    p(class=' choose-color color-yellow')
+                    p(class=' choose-color color-cinnabar')
+                    p(class=' choose-color color-white')
+    include popup
+    include scripts
+
+//TODO: auto field length
+//TODO: title single field
