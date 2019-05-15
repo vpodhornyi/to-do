@@ -41,11 +41,11 @@ describe('Notes', () => {
       });
   });
 
-/*  after(() => {
+  after(() => {
     server.close(() => {
       console.log('Server close!');
     });
-  });*/
+  });
 
   describe('/POST api/notes', () => {
     it('it should POST notes data and return notes db ID', (done) => {
